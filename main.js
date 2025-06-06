@@ -31,6 +31,7 @@ const glados = async () => {
 }
 
 const notify = async (contents) => {
+  console.log(contents)
   const appToken = process.env.WXPusherAppToken
   if (!appToken || !contents) return
   await fetch(`https://wxpusher.zjiecode.com/api/send/message`, {

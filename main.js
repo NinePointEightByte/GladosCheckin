@@ -16,10 +16,6 @@ const glados = async () => {
       method: 'GET',
       headers,
     }).then((r) => r.json())
-    for (const [key, value] of Object.entries(status)) {
-      console.log(`Key: ${key}, Value: ${value}`)
-    }
-    console.log(`${status}`)
     return [
       'Checkin OK',
       `${checkin.message}`,

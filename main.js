@@ -24,6 +24,7 @@ const glados = async () => {
   } catch (error) {
     return [
       'Checkin Error',
+      `${Number(status.data.leftDays)`,
       `${error}`,
       `<${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}>`,
     ]
